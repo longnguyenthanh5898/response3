@@ -1,0 +1,91 @@
+/* PC */
+@media (min-width: 1024px) {
+    .content-search input{
+       margin: 0;
+    } 
+    body{
+        height: 1366px;
+    }
+    .mobile-menu-btn{
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header{
+        width: 100%;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .content-container{
+        width: 100%;
+    }
+    .content-title{
+        font-size: 34px;
+    }
+    .mobile-menu-btn{
+        display: none;
+    }
+  
+}
+/* Mobile */
+@media (max-width: 740px){
+    .nav-bar{
+       position: static;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+        height: 46px;
+        overflow: hidden;
+    }
+    .nav-bar:first-child:hover .nav-bar{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    .nav-bar li {
+        display: block;
+        
+    }
+    
+    .content-title{
+        font-size: 22px;
+    }
+    
+   
+    .content-main{
+        padding: 20px 20px;
+    }
+    .content-main p{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .sub-nav{
+        width: 100%;
+    }
+
+    /* .first-child:hover .nav-bar{
+        height: auto;
+        overflow: initial;
+        color: red;
+
+        
+    } */
+    /* .btn{
+        font-size: 28px;
+        line-height: 46px;
+        color: red;
+    }
+    .mobile-menu-btn{
+        width: 10%;
+        float: right;
+        padding: 8px 11px;
+        background-color: #000;
+        
+    } */
+}
+
+
+
