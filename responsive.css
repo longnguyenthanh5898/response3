@@ -7,7 +7,7 @@
         height: 1366px;
     }
     #mobile-menu-btn{
-        display: none;
+        display: none !important;
     }
     .nav-bar{
         width: 100% !important;
@@ -30,7 +30,7 @@
         font-size: 34px;
     }
     #mobile-menu-btn{
-        display: none;
+        display: none !important;
     }
   
 }
