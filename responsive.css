@@ -9,6 +9,10 @@
     .mobile-menu-btn{
         display: none;
     }
+    .nav-bar{
+        width: 100% !important;
+        height: 46px !important;
+    }
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -16,7 +20,8 @@
         width: 100%;
     }
     .nav-bar{
-        width: 100%;
+        width: 100% !important;
+        height: 46px !important;
     }
     .content-container{
         width: 100%;
@@ -32,19 +37,15 @@
 /* Mobile */
 @media (max-width: 740px){
     .nav-bar{
-       position: static;
-        width: 100%;
+       
         text-align: center;
         letter-spacing: 2px;
         height: 46px;
         overflow: hidden;
+        width: 90%;
+
     }
-    .nav-bar:first-child:hover .nav-bar{
-        width: 100%;
-        text-align: center;
-        letter-spacing: 2px;
-    }
-    
+  
     .nav-bar li {
         display: block;
         
@@ -65,15 +66,9 @@
     .sub-nav{
         width: 100%;
     }
-
-    /* .first-child:hover .nav-bar{
-        height: auto;
-        overflow: initial;
-        color: red;
-
-        
-    } */
-    /* .btn{
+/* ==================================================================Mobile button */
+  
+    .btn{
         font-size: 28px;
         line-height: 46px;
         color: red;
@@ -84,7 +79,16 @@
         padding: 8px 11px;
         background-color: #000;
         
-    } */
+    }
+    .nav-bar li:hover .sub-nav{
+        display: block;
+    }
+    .sub-nav{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+    }
+   
 }
 
 

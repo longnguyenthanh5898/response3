@@ -16,6 +16,7 @@ html{
     background-color: #000;
     position: fixed;
     width: 1440px;
+    max-width: 100%;
    
 }
 .nav-bar li{
@@ -98,3 +99,6 @@ html{
     border-radius: 12px;
     border-color: transparent;
 }
+/* .mobile-menu-btn{
+    display: none;
+} */
