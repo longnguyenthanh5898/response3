@@ -6,7 +6,7 @@
     body{
         height: 1366px;
     }
-    .mobile-menu-btn{
+    #mobile-menu-btn{
         display: none;
     }
     .nav-bar{
@@ -29,7 +29,7 @@
     .content-title{
         font-size: 34px;
     }
-    .mobile-menu-btn{
+    #mobile-menu-btn{
         display: none;
     }
   
@@ -42,7 +42,9 @@
         letter-spacing: 2px;
         height: 46px;
         overflow: hidden;
-        width: 90%;
+        /* width: 90%; */
+        width: 100%;
+        position: relative;
 
     }
   
@@ -71,15 +73,27 @@
     .btn{
         font-size: 28px;
         line-height: 46px;
-        color: red;
+        color: #fff;
     }
     .mobile-menu-btn{
-        width: 10%;
+            /* width: 10%; */
+        top: 0px;
+        right: 0;
         float: right;
-        padding: 8px 11px;
+        padding: 9px 12px;
         background-color: #000;
+        z-index: 2;
+        position: absolute;
         
     }
+    #i-down{
+        display:block;
+    }
+    #i-up{
+        display: none;
+    }
+    
+
     .nav-bar li:hover .sub-nav{
         display: block;
     }

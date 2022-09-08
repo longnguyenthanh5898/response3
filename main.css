@@ -14,8 +14,8 @@ html{
 .nav-bar{
     line-height: 46px;
     background-color: #000;
-    position: fixed;
-    width: 1440px;
+    /* position: fixed; */
+    width: 100vw;
     max-width: 100%;
    
 }
@@ -37,6 +37,11 @@ html{
     text-decoration: none;
     color: #fff;
     padding: 0 20px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .sub-nav{
@@ -53,13 +58,10 @@ html{
 
 .content-container{
     background-image: url(https://cdn.theatlantic.com/thumbor/kkIi6TvMYcF3uPmU8D-5BN6v9Lg=/0x0:5302x2982/1952x1098/media/img/mt/2022/06/GettyImages_806191272_copy/original.jpg);
-    width: 1440px;
+    width: 100vw;
     max-width: 100%;
-    height: 100%;
     object-fit: scale-down;
-    background-position: 90% 0%;
-    background-repeat: repeat;
-    
+    background-position: 90% 0%;   
 }
 
 .content-main{
@@ -100,3 +102,39 @@ html{
     border-color: transparent;
 }
 
+.slide{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    padding-top: 40px;
+  
+}
+.slide-box{
+    width: 400px;
+    height: 600px;
+}
+.slide-box:hover .slide-info{
+    background-color: #000;
+}
+.slide-box:hover .slide-info h2, 
+.slide-info h4{
+    color: #ddd;
+}
+.slide-img{
+    width: 400px;
+    height: 300px;
+}
+.slide-info{
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin-top: -4px;
+}
+.slide-info h2{
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.slide-info h4{
+
+}
