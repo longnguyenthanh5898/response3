@@ -21,7 +21,11 @@ mobileBtn.onclick =  () =>{
     }
 };
 window.onscroll = () =>{
-  
+    if(window.pageYOffset > 46){
+        mobileBtn.style.display = "none"
+    } else{
+        mobileBtn.style.display = "block"
+    }
     // while( window.pageXOffset < 740){
     //     if(window.pageYOffset > 46){
     //         mobileMenu.style.width = "100%"
